@@ -2,42 +2,41 @@ $(document).ready(function () {
   //console.log('dentro funcion');  //solo visula
 
   const xhttp = new XMLHttpRequest();
-  xhttp.open('GET', 'https://catalogo-dcw.firebaseio.com/.json', true);
+  xhttp.open("GET", "https://catalogo-dcw.firebaseio.com/.json", true);
   xhttp.send();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       //console.log(this.responseText); //solo visual
       let datos_cat = JSON.parse(this.responseText);
       //solo visula
-      //console.log(datos_cat); 
+      //console.log(datos_cat);
 
       //inicio
-      let Promos = document.querySelector('#Promos');
-      Promos.innerHTML = '';
+      let Promos = document.querySelector("#Promos");
+      Promos.innerHTML = "";
 
       //Nuevo listado con promociones aplicando el filtro
       var SoloPro = datos_cat.filter(function (el) {
         //el es equivalente al objeto, utilisando el elemento promo como metodo de filtro
-        return (el.promo === 'promo');
+        return el.promo === "promo";
       });
       //solo visula
-      //console.log(SoloPro);         
+      //console.log(SoloPro);
       var IT = 0;
       for (let item of SoloPro) {
         //Np => numero de productos
         Np = item.id;
         if (IT == 0) {
           P0 = Np;
-        };
+        }
         if (IT == 1) {
           P1 = Np;
-        };
+        }
         if (IT == 2) {
           P2 = Np;
-        };
+        }
 
-        Promos.innerHTML +=
-          `                   
+        Promos.innerHTML += `                   
           <div id="princi-${item.id}" class="col mb-4 id_producto flipInY" filtro="${item.filtro}">
           <div class="card">
             <!-- Card image -->
@@ -83,7 +82,8 @@ $(document).ready(function () {
             <button type="button" onclick="B(${item.id});" class="close pt-1" aria-label="Close">
               <span aria-hidden="true"><i class="fas fa-window-close"></i></span>
             </button>
-            <h1>Lampara C12-L</h1>
+            <!-- Title -->
+              <h1 class="card-title">${item.nombre}</h1>
             <br>
             <div class="row">
               <div class="col-12 col-md-6">
@@ -117,7 +117,7 @@ $(document).ready(function () {
                   </li>
                   <li class="list-group-item">
                     <h3 class="font-weight-bold">
-                    <a class="text-reset" href="${item.urlM}" target="_blank">${item.manual}</a>
+                      <a class="text-reset" href="${item.urlM}" target="_blank">${item.manual}</a>
                       <!--WhatsApp-->
                       <a class="text-reset float-right font-weight-normal pt-0" href="https://bit.ly/WhatsApp-DCW"
                         target="_blank"><i class="fab fa-whatsapp-square" style="font-size: 2.5rem;color: #25D366;"></i></a>
@@ -142,49 +142,80 @@ $(document).ready(function () {
               <em>${item.txtnota}</em>
             </div>
           </div>
-        `
+        `;
         IT = IT + 1;
       }
     }
-  }
+  };
 });
 
 //funcion que muestra producto selecionado y oculta los demas
 function A(N, M) {
-  console.log('Valor de N= ' + N + ', es el ID de producto');
-  document.getElementById("Promos").classList.remove("row-cols-1", "row-cols-md-3");
-  document.getElementById("vermas-" + N).classList.remove("invisible", "d-none");
+  console.log("Valor de N= " + N + ", es el ID de producto");
+  document
+    .getElementById("Promos")
+    .classList.remove("row-cols-1", "row-cols-md-3");
+  document
+    .getElementById("vermas-" + N)
+    .classList.remove("invisible", "d-none");
   document.getElementById("princi-" + N).classList.add("invisible", "d-none");
   if (M == 0) {
-    document.getElementById("princi-" + P1).classList.add("invisible", "d-none");
-    document.getElementById("princi-" + P2).classList.add("invisible", "d-none");
-  };
+    document
+      .getElementById("princi-" + P1)
+      .classList.add("invisible", "d-none");
+    document
+      .getElementById("princi-" + P2)
+      .classList.add("invisible", "d-none");
+  }
   if (M == 1) {
-    document.getElementById("princi-" + P0).classList.add("invisible", "d-none");
-    document.getElementById("princi-" + P2).classList.add("invisible", "d-none");
-  };
+    document
+      .getElementById("princi-" + P0)
+      .classList.add("invisible", "d-none");
+    document
+      .getElementById("princi-" + P2)
+      .classList.add("invisible", "d-none");
+  }
   if (M == 2) {
-    document.getElementById("princi-" + P0).classList.add("invisible", "d-none");
-    document.getElementById("princi-" + P1).classList.add("invisible", "d-none");
-  };
+    document
+      .getElementById("princi-" + P0)
+      .classList.add("invisible", "d-none");
+    document
+      .getElementById("princi-" + P1)
+      .classList.add("invisible", "d-none");
+  }
 }
 
 //funcion que oculta producto selecionado y muestra los demas
 function B(N, M) {
-  document.getElementById("Promos").classList.add("row-cols-1", "row-cols-md-3");
+  document
+    .getElementById("Promos")
+    .classList.add("row-cols-1", "row-cols-md-3");
   document.getElementById("vermas-" + N).classList.add("invisible", "d-none");
-  document.getElementById("princi-" + N).classList.remove("invisible", "d-none");
+  document
+    .getElementById("princi-" + N)
+    .classList.remove("invisible", "d-none");
   if (M == 0) {
-    document.getElementById("princi-" + P1).classList.remove("invisible", "d-none");
-    document.getElementById("princi-" + P2).classList.remove("invisible", "d-none");
-  };
+    document
+      .getElementById("princi-" + P1)
+      .classList.remove("invisible", "d-none");
+    document
+      .getElementById("princi-" + P2)
+      .classList.remove("invisible", "d-none");
+  }
   if (M == 1) {
-    document.getElementById("princi-" + P0).classList.remove("invisible", "d-none");
-    document.getElementById("princi-" + P2).classList.remove("invisible", "d-none");
-  };
+    document
+      .getElementById("princi-" + P0)
+      .classList.remove("invisible", "d-none");
+    document
+      .getElementById("princi-" + P2)
+      .classList.remove("invisible", "d-none");
+  }
   if (M == 2) {
-    document.getElementById("princi-" + P0).classList.remove("invisible", "d-none");
-    document.getElementById("princi-" + P1).classList.remove("invisible", "d-none");
-  };
-
+    document
+      .getElementById("princi-" + P0)
+      .classList.remove("invisible", "d-none");
+    document
+      .getElementById("princi-" + P1)
+      .classList.remove("invisible", "d-none");
+  }
 }
