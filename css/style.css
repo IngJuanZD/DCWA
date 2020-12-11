@@ -1,0 +1,172 @@
+/* Configuracion para PC Horizontal*/
+@media (min-width: 767px) {
+    #T-big {
+        font-size: 10vh;
+    }
+
+    .ft-mob-p {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+    .Formu{
+        height:1460px;
+    }
+    .btn-up{
+        font-size: 2.5rem !important;
+    }
+}
+
+@media (max-width:768px) {
+    .ft_mob {
+        text-align: center;
+        display: block;
+    }
+
+    .ft-mob-i {
+        padding-left: 1.5rem !important;
+    }    
+    .Formu{
+        height:1560px;
+        }
+}
+
+.btn-up {
+    display: none;
+    color: #fff;
+    background-color: #75003E;
+    width: 2.6rem;
+    height: 2.6rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.6rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+#T-big {
+    text-shadow: 5px 5px 5px black;
+}
+
+#Desc,
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#Desc {
+    font-size: 1.1rem;
+    background-color: red;
+    color: white;
+}
+
+.font-T,
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.tamT{
+    font-size: 1.5rem;
+}
+
+.tamTx{
+    font-size: 1.7rem;
+}
+
+.Pre,
+h2 {
+    font-family: 'Josefin Slab', serif;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+.top-nav-collapse {
+    background-color: #dfdfdf;
+}
+
+html,
+body,
+.view {
+    height: 100%;
+}
+
+/*Intro*/
+.caja-intro {
+    z-index: 2;
+}
+
+.T-big {
+    text-align: center;
+    font-size: 11vw;
+}
+
+/* Carousel*/
+.carousel,
+.carousel-item,
+.carousel-item.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.bgg {
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*tamaños*/
+.t2 {
+    font-size: 3.5vh;
+}
+
+.ta {
+    font-size: 2.5vh;
+}
+
+/*Catalogo*/
+.categorias .bt-activo {
+    background: white !important;
+    color: black !important;
+
+}
+
+.promo {
+    text-decoration: line-through;    
+}
+
+.pad{
+    padding-top: 100px;
+}
+
+/*Nosotros*/
+.Preset{
+    color: #fff;
+    background-color: #2E2E2E;
+}
+
+
+
+
+/*Footer*/
+footer {
+    color: #fff;
+    font-size: .9rem;
+}
+
+.ft_color {
+    background-color: #3A3A3A;
+}
+
+.footer_pg {
+    background-color: #2E2E2E;    
+}
