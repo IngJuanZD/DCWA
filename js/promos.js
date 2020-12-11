@@ -87,7 +87,10 @@ $(document).ready(function () {
             <br>
             <div class="row">
               <div class="col-12 col-md-6">
+              <!-- Pagina 360º 
               <div style="padding: 100% 0 0 0; width: 100%; position: relative;">  <iframe src="${item.foto360}" frameborder="0" scrolling="no" style="background-color: transparent; border: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen></iframe></div>
+              -->
+              <img src="${item.foto360}" class="img-fluid" alt="Funny image">
               </div>
         
               <div class="col-12 col-md-6 pt-3">
