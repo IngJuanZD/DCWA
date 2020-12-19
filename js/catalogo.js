@@ -28,7 +28,7 @@ $(document).ready(function () {
               <picture class="card-img-top">
                 <source srcset="${item.fotoportada}" />
               </picture>
-<--!
+<!--
               <img class="card-img-top" src="${item.fotoportada}" alt="Card image cap">
 -->
               <a onclick="A(${item.id});">
