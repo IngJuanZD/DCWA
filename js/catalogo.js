@@ -25,7 +25,12 @@ $(document).ready(function () {
           <div class="card">
             <!-- Card image -->
             <div class="view overlay zoom">
+              <picture class="card-img-top">
+                <source srcset="${item.fotoportada}" />
+              </picture>
+<--!
               <img class="card-img-top" src="${item.fotoportada}" alt="Card image cap">
+-->
               <a onclick="A(${item.id});">
                 <div class="mask rgba-white-slight"></div>
               </a>
@@ -76,7 +81,7 @@ $(document).ready(function () {
               -->
               
               <!-- Gif -->
-              <img src="${item.foto360}" class="img-fluid" alt="Funny image">              
+              <img src="${item.foto360}" class="img-fluid" alt="Funny image">                            
 
               </div>
         
