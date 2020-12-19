@@ -80,7 +80,8 @@ $(document).ready(function () {
               -->
 
               <video width="100%" height="100%" autoplay loop>
-                  <source src="${item.foto360}" type="video/mp4">                  
+                  <source src="${item.foto360}" type="video/mp4">
+                  Tu navegador no soporta la etiqueta HTML5 video.                  
               </video>
 
               </div>
