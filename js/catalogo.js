@@ -74,9 +74,15 @@ $(document).ready(function () {
               <!-- web360
               <div style="padding: 100% 0 0 0; width: 100%; position: relative;">  <iframe src="${item.foto360}" frameborder="0" scrolling="no" style="background-color: transparent; border: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen></iframe></div>
               -->
-              <!-- Gif -->
-              <img src="${item.foto360}" class="img-fluid" alt="Funny image">
               
+              <!-- Gif 
+              <img src="${item.foto360}" class="img-fluid" alt="Funny image">
+              -->
+
+              <video controls autoplay loop>
+                  <source src="${item.foto360}" type="video/mp4">                  
+              </video>
+
               </div>
         
               <div class="col-12 col-md-6 pt-3">
