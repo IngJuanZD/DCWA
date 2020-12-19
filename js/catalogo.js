@@ -79,7 +79,7 @@ $(document).ready(function () {
               <img src="${item.foto360}" class="img-fluid" alt="Funny image">
               -->
 
-              <video autoplay loop>
+              <video width="100%" height="100%" autoplay loop>
                   <source src="${item.foto360}" type="video/mp4">                  
               </video>
 
