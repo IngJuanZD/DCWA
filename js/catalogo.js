@@ -106,7 +106,7 @@ $(document).ready(function () {
                     <h3 class="font-weight-bold">
                       <a class="text-reset" href="${item.urlM}" target="_blank">${item.manual}</a>
                       <!--WhatsApp-->
-                      <a class="text-reset float-right font-weight-normal pt-0" href="https://bit.ly/WhatsApp-DCW"
+                      <a class="text-reset float-right font-weight-normal pt-0" href="https://api.whatsapp.com/send?phone=5215549162906&text=%C2%A1Hola!%20Tengo%20una%20duda%20sobre%20${item.nombre}%20con%20codigo%20de%20producto%20${item.codigo}%20...&source=&data="
                         target="_blank"><i class="fab fa-whatsapp-square" style="font-size: 2.5rem;color: #25D366;"></i></a>
                     </h3>
                   </li>
