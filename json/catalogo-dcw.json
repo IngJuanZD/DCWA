@@ -670,5 +670,26 @@
     "txtnota": "",
     "urlComp": "https://www.tienda.decorationcw.com.mx/",
     "urlM": ""
+  },
+  {
+    "codigo": "DCW00033",
+    "colores": "Pasteles,Dorados,Natural",
+    "descripcion": "Luce diferente y con unos aretes únicos elaborados en concreto puedes pedirlos en color natura o alguno de nuestra grama de colores.",
+    "filtro": "B_",
+    "foto360": "",
+    "fotoportada": "img/Productos/DCW00033.webp",
+    "id": "32",
+    "manual": "",
+    "materiales": "Concreto",
+    "medidas": "2 x 1.5 x .5",
+    "nombre": "Aretes",
+    "nota": "",
+    "peso": "0.20",
+    "precio": "3 x $45 + env\u00edo",
+    "precioPromo": "",
+    "promo": "No",
+    "txtnota": "",
+    "urlComp": "https://www.tienda.decorationcw.com.mx/",
+    "urlM": ""
   }
 ]
