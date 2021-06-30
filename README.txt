@@ -1,5 +1,5 @@
 Prueba:
-[DCWA](https://ingjuanzd.github.io/DCWA/ target=_blank)
+.[DCWA](https://ingjuanzd.github.io/DCWA/)
 
 Material Design for Bootstrap
 Version: MDB FREE 4.19.1
