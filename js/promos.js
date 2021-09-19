@@ -18,7 +18,7 @@ $(document).ready(function () {
       //Nuevo listado con promociones aplicando el filtro
       var SoloPro = datos_cat.filter(function (el) {
         //el es equivalente al objeto, utilisando el elemento promo como metodo de filtro
-        return el.promo === "promo";
+        return el.promo === "Si";
       });
       //solo visula
       //console.log(SoloPro);
@@ -35,7 +35,25 @@ $(document).ready(function () {
         if (IT == 2) {
           P2 = Np;
         }
-
+        if (item.manual == 'Si'){          
+          Manual = "Manual <i class='fas fa-download ml-2'></i>";
+        }
+        else{
+          Manual = " ";      
+        }        
+        if (item.promo == "Si"){
+          Promo = "promo";
+        }
+        else{
+          Promo = " ";
+          item.precioPromo = " "
+        }
+        if (item.nota == "Si"){
+          Nota = "Nota";
+        }
+        else{
+          Nota = " ";
+        }   
         Promos.innerHTML += `                   
           <div id="princi-${item.id}" class="col mb-4 id_producto flipInY" filtro="${item.filtro}">
           <div class="card">
@@ -54,7 +72,7 @@ $(document).ready(function () {
               <hr>
               <!-- Text -->
         
-              <p class="font-weight-bold mb-0 text-right pr-1"><span class="${item.promo} float-left">${item.precio}</span>
+              <p class="font-weight-bold mb-0 text-right pr-1"><span class="${Promo} float-left">${item.precio}</span>
                 ${item.precioPromo}</p>
             </div>
         
@@ -114,12 +132,12 @@ $(document).ready(function () {
                   </li>
                   <li class="list-group-item">
                   <p class="font-weight-bold mb-0 text-right pr-1"><span
-                        class="${item.promo} float-left">${item.precio}</span> ${item.precioPromo}<span
+                        class="${Promo} float-left">${item.precio}</span> ${item.precioPromo}<span
                         class="d-inline text-monospace font-weight-bold minT">(MXN)</span></p>
                   </li>
                   <li class="list-group-item">
                     <h3 class="font-weight-bold">
-                      <a class="text-reset" href="${item.urlM}" target="_blank">${item.manual}</a>
+                      <a class="text-reset" href="${item.urlM}" target="_blank">${Manual}</a>
                       <!--WhatsApp-->
                       <a class="text-reset float-right font-weight-normal pt-0" href="https://api.whatsapp.com/send?phone=5215549162906&text=%C2%A1Hola!%20Tengo%20una%20duda%20sobre%20${item.nombre}%20con%20codigo%20de%20producto%20${item.codigo}%20...&source=&data="
                         target="_blank"><i class="fab fa-whatsapp-square" style="font-size: 2.5rem;color: #25D366;"></i></a>
@@ -140,7 +158,7 @@ $(document).ready(function () {
             </div>
             </br>
             <div class="container">
-              <h4>${item.nota}</h4>
+              <h4>${Nota}</h4>
               <em>${item.txtnota}</em>
             </div>
           </div>
