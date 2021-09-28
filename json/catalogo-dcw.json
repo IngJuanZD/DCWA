@@ -670,5 +670,26 @@
     "txtnota": "",
     "urlComp": "https://www.tienda.decorationcw.com.mx/",
     "urlM": ""
+  },
+  {
+    "codigo": "DCW33",
+    "colores": "asd",
+    "descripcion": "asd",
+    "filtro": "H_",
+    "foto360": "img/Productos/DCW33.gif",
+    "fotoportada": "img/Productos/DCW33.png",
+    "id": "32",
+    "manual": "No",
+    "materiales": "asd",
+    "medidas": "asd",
+    "nombre": "Prueba",
+    "nota": "No",
+    "peso": "asfd",
+    "precio": "asd",
+    "precioPromo": "",
+    "promo": "No",
+    "txtnota": "",
+    "urlComp": " ",
+    "urlM": ""
   }
 ]
