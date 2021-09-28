@@ -670,26 +670,5 @@
     "txtnota": "",
     "urlComp": "https://www.tienda.decorationcw.com.mx/",
     "urlM": ""
-  },
-  {
-    "codigo": "DCW33",
-    "colores": "Azul",
-    "descripcion": "Solo es de prueba",
-    "filtro": "I_",
-    "foto360": "img/Productos/DCW33.gif",
-    "fotoportada": "img/Productos/DCW33.png",
-    "id": "32",
-    "manual": "No",
-    "materiales": "Concreto",
-    "medidas": "10 x 10 x 10",
-    "nombre": "Prueba",
-    "nota": "No",
-    "peso": "0.60kg",
-    "precio": "$10000",
-    "precioPromo": "",
-    "promo": "No",
-    "txtnota": "",
-    "urlComp": " ",
-    "urlM": ""
   }
 ]
