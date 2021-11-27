@@ -670,26 +670,5 @@
     "txtnota": "",
     "urlComp": "https://www.tienda.decorationcw.com.mx/",
     "urlM": ""
-  },
-  {
-    "codigo": "DCW33",
-    "colores": "Rojo",
-    "descripcion": "Mini Letreso con litra por lertras",
-    "filtro": "H_",
-    "foto360": "img/Productos/DCW33.gif",
-    "fotoportada": "img/Productos/DCW33.png",
-    "id": "32",
-    "manual": "No",
-    "materiales": "Concreto",
-    "medidas": "1x1x1",
-    "nombre": "ABC",
-    "nota": "No",
-    "peso": ".250",
-    "precio": "$5.0",
-    "precioPromo": "",
-    "promo": "No",
-    "txtnota": "",
-    "urlComp": "https://ingjuanzd.github.io/DCWA/",
-    "urlM": ""
   }
 ]
