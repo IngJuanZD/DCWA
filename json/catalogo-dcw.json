@@ -670,5 +670,26 @@
     "txtnota": "",
     "urlComp": "https://www.tienda.decorationcw.com.mx/",
     "urlM": ""
+  },
+  {
+    "codigo": "DCW33",
+    "colores": "Multicolor",
+    "descripcion": "Algonuevo",
+    "filtro": "H_",
+    "foto360": "img/Productos/DCW33.gif",
+    "fotoportada": "img/Productos/DCW33.png",
+    "id": "32",
+    "manual": "No",
+    "materiales": "Concreto ",
+    "medidas": "15 x 10 x 12",
+    "nombre": "Producto demo",
+    "nota": "No",
+    "peso": ".50",
+    "precio": "$70 + env\u00edo",
+    "precioPromo": "$50 + env\u00edo",
+    "promo": "Si",
+    "txtnota": "",
+    "urlComp": "https://www.tienda.decorationcw.com.mx/",
+    "urlM": ""
   }
 ]
