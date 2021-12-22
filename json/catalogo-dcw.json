@@ -670,5 +670,26 @@
     "txtnota": "",
     "urlComp": "https://www.tienda.decorationcw.com.mx/",
     "urlM": ""
+  },
+  {
+    "codigo": "DCW33",
+    "colores": "ljhg",
+    "descripcion": "ljhg",
+    "filtro": "H_",
+    "foto360": "img/Productos/DCW33.gif",
+    "fotoportada": "img/Productos/DCW33.png",
+    "id": "32",
+    "manual": "No",
+    "materiales": "sdf",
+    "medidas": "sdfsdf",
+    "nombre": "Calis 06",
+    "nota": "No",
+    "peso": "sdfe",
+    "precio": "sdf",
+    "precioPromo": "",
+    "promo": "sd",
+    "txtnota": "",
+    "urlComp": "sdf",
+    "urlM": ""
   }
 ]
