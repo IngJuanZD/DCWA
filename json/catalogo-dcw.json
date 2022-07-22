@@ -670,5 +670,26 @@
     "txtnota": "",
     "urlComp": "https://www.tienda.decorationcw.com.mx/",
     "urlM": ""
+  },
+  {
+    "codigo": "DCW33",
+    "colores": "Rojo",
+    "descripcion": "Solo es de prueva",
+    "filtro": "H_",
+    "foto360": "img/Productos/DCW33.gif",
+    "fotoportada": "img/Productos/DCW33.png",
+    "id": "32",
+    "manual": "Si",
+    "materiales": "digital",
+    "medidas": "10 x10 x 10",
+    "nombre": "Producto de nuevo",
+    "nota": "Si",
+    "peso": "3MB",
+    "precio": "$10.0",
+    "precioPromo": "",
+    "promo": "No",
+    "txtnota": "Solo es una prueba",
+    "urlComp": "google.com",
+    "urlM": "google.com"
   }
 ]
